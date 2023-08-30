@@ -1,0 +1,122 @@
+* { 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+body {
+    background-color: #e4ebf1;
+}
+
+.container{
+    transition: box-shadow 0.3s ease;
+
+    padding: 70px;
+    display: flex;
+    width: 650px;
+    height: 380px;
+    padding-bottom: 100px;
+    margin: auto;
+    background-color: #fbfcff;
+    border-radius: 35px;
+}
+
+.container:hover {
+    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.3);
+}
+
+#robot{
+    margin-right: 100px;
+    margin-left: 65px;
+}
+
+header{
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+header #titulo {
+    font-size: 50px;
+    color: #282f3a;
+    padding-bottom: 20px;
+}
+
+section, header p {
+    color: #38465c;
+}
+
+footer {
+    margin: auto;
+    margin-top: 120px;
+    padding: 850;
+    display: flex;
+    background-color: #282f3a;
+    height: 100px;
+    color: whitesmoke;
+
+    justify-content: center;
+
+    align-items: center;
+    font-size: 20px;
+
+}
+
+footer section {
+    float: right;
+    color: white;
+    margin-left: 100px;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;        
+    border-bottom: 2px solid #1bbed0;
+}
+
+footer a:hover {
+    color: #1bbed0;
+}
+
+footer p, a {    
+    margin-left: 20px;
+}
+
+/* Cambiar el color del texto del placeholder */
+input::placeholder {
+    color: #b2a9a9; /* Cambia el color a tu elección */
+    font-size: 15px;
+}
+
+input {
+    background: #ffffff;
+    color:#495763; 
+    border: none;
+    outline: none;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 1), 
+                5px 5px 5px rgba(154, 151, 151, 0.1),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.427),
+                inset 5px 5px 5px rgba(114, 109, 109, 0.15);
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    font-size: 15px;
+}
+
+input[type="button"] { 
+    background: #ffffff;
+    border: none;
+    outline: none;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.3), 
+                5px 5px 5px rgba(21, 21, 21, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    width: 55px;
+    font-size: 15px;
+}
+
+.botones {
+    color: #ffffff;
+}
+

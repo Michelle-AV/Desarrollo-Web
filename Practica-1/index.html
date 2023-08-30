@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practica1: Calculadora </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="icon" href="images/icon.ico">
+
+</head>
+<body>
+    <header>  
+        <h1 id="titulo">Calculadora basica </h1>
+        <p> Practica 1: visualizar un formulario que permita efectuar operaciones aritméticas de manera dinámica</p>
+    </header>
+
+    <section> 
+        <div class="container">
+                <img id="robot"  src="images/robot.png" width="220px" height="380px"/>
+            <div class="proceso">
+                <form id="calculadora">
+                    <p>Ingresa los datos: </p>
+                    <input type="number" id="numero1" name="numero1" placeholder="Numero 1"><br><br>
+                    <input type="number" id="numero2" name="numero2" placeholder="Numero 2"><br><br>
+
+                    <p id="texto">Selecciona una operación:</p>
+                    
+                <div class="botones">    
+                    <input type="button" value="+" onclick="sumar();">
+                    <input type="button" value="-" onclick="resta();">
+                    <input type="button" value="*" onclick="mult();">
+                    <input type="button" value="/" onclick="division();">
+                    <br></br>
+                </div>
+                    <p id="result">Resultado: <span id="resultado"></span></p>
+            
+                    <script type="text/javascript" src="op.js">
+                    </script>
+            
+                </form>
+
+            </div> <!-- cierre de calculadora-->
+        </div> 
+    </section>
+
+    <footer>
+        <i class="fa-solid fa-mobile-screen-button"></i>        
+        <p> Desarrollo Web y Moviles </p>
+        <section>
+            <i class="fa-brands fa-github"></i>
+            <a target="_blank" href="https://github.com/Michelle-AV/practica1"> GitHub </a>
+        </section>
+    </footer>
+
+</body>
+</html>
