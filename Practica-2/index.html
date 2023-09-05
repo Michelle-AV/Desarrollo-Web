@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practica2: RFC </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="icon" href="images/icon.ico">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Generador de RFC </h1>
+        <p> Practica 1: Desarrollar una aplicación web SPA para generar RFC y consumir un API</p>
+    </header>
+
+    <section class="ingresaDatos">
+
+        <div class="datos">
+
+            <div class="izq">
+                <div>
+                    <p id="texto"> Ingresa tus datos personales </p>
+                    <img id="robot" src="images/robot.PNG" alt="">
+                </div>
+            </div>
+            <div class="der">
+                <div class="formulario">
+                    <br><br>
+                    <p> Creación de tu RFC </p> <br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres">
+                    <input type="text" id="apPat" name="apPat" placeholder="Apellido paterno">
+                    <input type="text" id="apMat" name="apMat" placeholder="Apellido materno">
+                    <input type="date" id="fechaNac" name="apMat" placeholder="dd/mm/aaaa">
+                    <br></br>
+                    <div id="generarRFC">
+                        <button id="btnRfc"> Generar RFC </button>
+                        <input type="text" id="rfcGenerado" name="rfc" placeholder="RFC GENERADO">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="apiRest">
+        <div class="mostrarAPI">
+            <div class="formularioAPI">
+                <br><br>
+                <p> Consulta en la Api </p><br><br>
+                <input type="number" id="idUser" name="idUser" placeholder="ID a buscar">
+                <button id="consultaApi"> Mostrar datos </button>
+                <button id="limpiar"> X </button>
+                <input type="text" id="nombreApi" name="nombreApi" placeholder="Nombre completo" readonly><br>
+                <input type="text" id="emailApi" name="emailApi" placeholder="Correo electrónico" readonly>
+                <br>
+            </div>
+
+            <div>
+                <img id="robot2" src="images/robot2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <p> Desarrollo Web y Moviles </p>
+        <section>
+            <i class="fa-brands fa-github"></i>
+            <a target="_blank" href="https://github.com/Michelle-AV/practica1"> GitHub </a>
+        </section>
+    </footer>
+
+</body>
+
+</html>
